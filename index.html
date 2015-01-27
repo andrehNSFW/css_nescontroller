@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>NES</title>
+
+	<style>
+		*{
+			margin: 0;
+			font-family: Verdana;
+			font-size: 12px;
+			cursor: pointer;
+		}
+
+		.container{
+			width: 100%;
+		}
+
+		.cable{
+			height: 200px;
+			width: 20px;
+			background-color: #1E1F20;
+			margin: 0 auto;
+		}
+
+		.controller{
+			margin: 0px auto;
+			background-color: #1E1F20;
+			width: 600px;
+			height: 260px;
+			border: 8px solid #E0DFD2;
+			border-top-width: 25px;
+			box-shadow: 10px 10px 5px #888888;
+		}
+
+		.analog,
+		.select-start,
+		.buttons{
+			float: left;
+			width: 200px;
+			height: 240px;			
+		}
+		
+		.analog .up,
+		.analog .left,
+		.analog .right,
+		.analog .down{
+			width: 40px;
+			height: 40px;
+			background-color: #1E1F20;
+			border: 8px solid #E0DFD2;
+		}
+
+		.analog .up{
+			margin: 60px 0px 0 80px;			
+			border-bottom: none;
+		}
+
+		.analog .left{
+			width: 50px;			
+			margin: -103px 0px 0 30px;			
+			border-right: none;
+			float: left;
+		}
+
+		.analog .right{
+			margin: 0px 14px 0 30px;			
+			border-left: none;
+			float: right;
+			width: 50px;			
+		}
+
+		.analog .down{
+			margin: 55px 0px 0 80px;			
+			border-top: none;
+		}
+
+		.select-start .grey-bar{
+			width: 140px;
+			height: 30px;
+			margin: 20px auto;
+			background-color: #4A4847;
+		}
+
+		.grey-bar span{
+			color: #E52525;
+			/* margin: 20px; */
+			padding: 8px 11px;
+			font-weight: bold;
+			float: left;
+		}
+
+		.select-start .select-buttons{
+			width: 140px;
+			height: 60px;
+			margin: 20px 30px;
+			background-color: #E0DFD2;
+		}
+
+		.select-buttons .select,
+		.select-buttons .start{
+			float: left;
+			background-color: #1E1F20;
+			width: 40px;
+			height: 15px;
+			margin: 25px 15px;
+			border-radius: 5px;
+		}
+
+		.buttons .a,
+		.buttons .b{
+			width: 60px;
+			height: 60px;
+			background-color: #E0DFD2;
+			float: left;
+			margin: 120px 10px;
+			border-radius: 5px;
+		}
+
+		.buttons .a-button,
+		.buttons .b-button{
+			width: 45px;
+			height: 45px;
+			background-color: #E52525;
+			margin: 8px;
+			border-radius: 100px;
+		}
+
+		.buttons .a-text,
+		.buttons .b-text{
+			color: #E52525;
+			float: left;									
+		}		
+
+		.buttons .b-text{
+			margin: 190px 0 0 -100px;
+		}
+
+		.buttons .a-text{
+			margin: 190px 0 0 -20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="cable"></div>
+		<div class="controller">
+			<div class="analog">
+				<div class="up"></div>
+				<div class="right"></div>
+				<div class="down"></div>
+				<div class="left"></div>				
+			</div>
+			<div class="select-start">
+				<div class="grey-bar"></div>
+				<div class="grey-bar"><span>SELECT</span><span>START</span></div>
+				<div class="select-buttons">
+					<div class="select"></div>
+					<div class="start"></div>
+				</div>
+				<div class="grey-bar"></div>
+			</div>
+			<div class="buttons">				
+				<div class="b"><div class="b-button"></div></div>
+				<div class="a"><div class="a-button"></div></div>								
+				<div class="b-text">B</div>
+				<div class="a-text">A</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
